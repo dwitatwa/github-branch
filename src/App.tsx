@@ -30,7 +30,7 @@ export default function InputEchoPage() {
     if (!inputText) return;
 
     try {
-      await navigator.clipboard.writeText(inputText);
+      await navigator.clipboard.writeText(outputText);
       setCopied(true);
 
       // Reset copied state after 2 seconds
